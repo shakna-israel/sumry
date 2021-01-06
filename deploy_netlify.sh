@@ -2,7 +2,7 @@
 
 set -e
 
-zip -q -r ../website.zip .
+zip -q -r website.zip .
 
 . ~/auth_file
 
