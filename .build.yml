@@ -1,0 +1,11 @@
+image: alpine/stable
+packages:
+  - curl
+secrets:
+  - 7d143ee9-613a-499b-b28e-bc871e180ecf
+sources:
+  - https://git.sr.ht/~shakna/sumry
+tasks:
+  - deploy: |
+     cd sumry
+     sh deploy_netlify.sh
