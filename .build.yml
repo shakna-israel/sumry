@@ -1,6 +1,7 @@
 image: alpine/edge
 packages:
   - curl
+  - zip
 secrets:
   - 7d143ee9-613a-499b-b28e-bc871e180ecf
 sources:
