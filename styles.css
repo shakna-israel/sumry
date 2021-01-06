@@ -1,0 +1,110 @@
+body {
+	color: #222;
+	font-size: 18px;
+	font-size: 1.2em;
+	line-height: 1.6;
+	margin: 40px auto;
+	max-width: 650px;
+	max-width: 90vw;
+	padding: 0 10px;
+}
+
+footer hr {
+	width: 80%;
+}
+
+pre, code {
+	overflow: auto;
+}
+
+h1,
+h2,
+h3 {
+	line-height: 1.2;
+}
+
+blockquote {
+	padding: 1em;
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+details {
+	padding: 3px;
+	border: 1px solid #ccc;
+	border-radius: 0.5em;
+	margin: 0;
+}
+
+summary,
+details p,
+details h1, 
+details h2, 
+details h3 {
+	padding: 0;
+}
+
+mark {
+	color: white;
+	background-color: black;
+	border-radius: 4px;
+	padding: 2px;
+}
+
+mark::before,
+mark::after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+mark::before {
+  content: " [important choice start] ";
+}
+
+mark::after {
+  content: " [important choice end] ";
+}
+
+@media (min-width: 40em) {
+	body {
+		max-width: 650px;
+		max-width: 60vw;
+	}
+
+	details {
+		display: inline-block;
+		padding: 0.2em;
+		margin: 0.1em;
+	}
+
+	summary,
+	details p,
+	details h1, 
+	details h2, 
+	details h3 {
+		padding: 0.1em;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+  	filter: invert(90%) hue-rotate(25deg);
+  	background-color: black;
+  }
+
+  img, video, iframe {
+    filter: invert(100%) hue-rotate(-25deg);
+  }
+}
