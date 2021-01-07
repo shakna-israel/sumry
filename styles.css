@@ -79,14 +79,13 @@ mark::after {
 
 @media (min-width: 40em) {
 	body {
-		max-width: 650px;
-		max-width: 60vw;
+		max-width: 700px;
+		max-width: 70vw;
 	}
 
 	details {
 		display: inline-block;
-		padding: 0.2em;
-		margin: 0.1em;
+		padding: 3px;
 	}
 
 	summary,
@@ -94,7 +93,7 @@ mark::after {
 	details h1, 
 	details h2, 
 	details h3 {
-		padding: 0.1em;
+		padding: 3px;
 	}
 }
 
